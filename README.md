@@ -1,6 +1,8 @@
 ## 前言
 
-笔记使用GitBook + Typora + Git（目录管理+编辑+托管）完成。
+### 文档工具使用：
+
+笔记使用GitBook + Typora + Github（目录管理+编辑+托管）完成。
 
 Gitbook安装和使用指南：https://einverne.github.io/gitbook-tutorial/content/basic.html
 
@@ -18,4 +20,8 @@ gitbook serve --port 2333   #指定端口
 gitbook pdf ./ ./mybook.pdf  #生成PDF，路径可省
 ```
 
-4，最后，使用Git进行书籍的版本生成和发布，在 mybook 目录下执行 git init 初始化仓库，执行 git remote add 添加远程仓库（你得先在远端建好）。接着就可以愉快地 commit，push，pull！
+4，最后，使用Github进行书籍的版本生成和发布，预先建好仓库，将文件保存到本地仓库，在github客户端进行change和sync。
+
+5，typora的编辑一般采用文件树视图，然后在大纲查看文档知识点。图片插入，在图片全局设置里优先使用相对路径并设置相对路径，图片在插入后，会在相对路径复制图片源，以后文档会去相对路径读取图片，另外typora可设置为自动保存。
+
+总结，在typora离线编辑，将更改放置到github的本地仓库相应目录下，change并sync即可更新版本，并在线浏览。使用gitbook进行本地预览。类似的文档编辑器还有vscode和sublime等。
